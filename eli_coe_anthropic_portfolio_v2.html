@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eli Coe — Anthropic Copy Lead, Enterprise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0D0D0D;--dk:#1C1C2E;--md:#4A4A6A;--lt:#7A7A9A;--rule:#E0E0EC;--acc:#CC5500;--bg:#FAFAF8;--warm:#F7F5F0;--white:#FFFFFF}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.7;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+#bar{position:fixed;top:0;left:0;height:2px;background:var(--acc);width:0;z-index:100;transition:width .1s linear}
+nav{position:sticky;top:0;background:rgba(250,250,248,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);z-index:50;padding:0 32px}
+.ni{max-width:780px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px;gap:24px}
+.nn{font-family:"DM Sans",sans-serif;font-weight:500;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);text-decoration:none;white-space:nowrap}
+.nl{display:flex;gap:20px;list-style:none;overflow-x:auto;scrollbar-width:none}
+.nl::-webkit-scrollbar{display:none}
+.nl a{font-size:12px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--lt);text-decoration:none;white-space:nowrap;transition:color .15s}
+.nl a:hover{color:var(--acc)}
+.wrap{max-width:780px;margin:0 auto;padding:0 32px 120px}
+.cover{padding:80px 0 56px;border-bottom:1px solid var(--rule)}
+.ey{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:20px}
+.cn{font-family:"Playfair Display",serif;font-size:clamp(52px,8vw,80px);font-weight:900;line-height:.95;color:var(--dk);margin-bottom:16px;letter-spacing:-.02em}
+.ct{font-size:18px;font-weight:300;color:var(--md);margin-bottom:40px}
+.ar{height:2px;background:var(--acc);width:48px;margin-bottom:40px}
+.cb p{font-size:16px;line-height:1.75;color:var(--ink);margin-bottom:20px}
+.cb p:last-child{margin-bottom:0}
+.toc{margin-top:48px;padding-top:28px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:8px 4px;font-size:12px;color:var(--md)}
+.tl{font-weight:500;color:var(--acc);letter-spacing:.08em;text-transform:uppercase;margin-right:4px}
+.toc a{color:var(--md);text-decoration:none;transition:color .15s}
+.toc a:hover{color:var(--acc)}
+.ts{color:var(--rule)}
+section{padding:72px 0 0}
+.kk{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:12px;margin-top:8px}
+h1{font-family:"Playfair Display",serif;font-size:clamp(36px,5vw,52px);font-weight:700;line-height:1.1;color:var(--dk);letter-spacing:-.02em;margin-bottom:24px}
+h2{font-family:"Playfair Display",serif;font-size:clamp(24px,3.5vw,32px);font-weight:700;line-height:1.2;color:var(--dk);letter-spacing:-.01em;margin-top:56px;margin-bottom:16px}
+h3{font-family:"DM Sans",sans-serif;font-size:18px;font-weight:500;color:var(--dk);margin-top:40px;margin-bottom:12px}
+.lbl{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-top:32px;margin-bottom:8px}
+p{font-size:15.5px;line-height:1.8;color:var(--ink);margin-bottom:16px;max-width:680px}
+p.meta{font-size:13.5px;color:var(--lt);font-style:italic;margin-bottom:24px}
+.rule{height:1px;background:var(--rule);margin:40px 0}
+.racc{height:1px;background:var(--acc);margin:56px 0 32px}
+.callout{border-left:3px solid var(--acc);padding:16px 24px;margin:32px 0;background:rgba(204,85,0,.04)}
+.callout p{font-size:16px;line-height:1.7;color:var(--dk);font-style:italic;margin:0;max-width:none}
+.hed{font-family:"Playfair Display",serif;font-size:clamp(28px,4vw,40px);font-weight:700;line-height:1.15;color:var(--dk);letter-spacing:-.02em;margin:20px 0 8px}
+.hed.acc{color:var(--acc)}
+.deck{font-size:18px;font-weight:300;color:var(--md);margin-bottom:20px;line-height:1.5}
+.adl{font-size:14px;color:var(--md);font-style:italic;margin-bottom:16px;line-height:1.6}
+.ooh{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0 32px}
+@media(max-width:600px){.ooh{grid-template-columns:1fr}}
+.oc{border:1px solid var(--rule);padding:24px;background:var(--white)}
+.oc .cl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lt);margin-bottom:12px}
+.oc .ch{font-family:"Playfair Display",serif;font-size:22px;font-weight:700;line-height:1.2;color:var(--dk);margin-bottom:8px}
+.oc .ch span{color:var(--acc)}
+.oc .cd{font-size:13px;color:var(--md);font-style:italic}
+.pgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--rule);margin:24px 0}
+@media(max-width:600px){.pgrid{grid-template-columns:1fr}}
+.pc{background:var(--white);padding:24px 20px}
+.pc .pco{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:10px}
+.pc p{font-size:13.5px;line-height:1.65;color:var(--md);margin:0;max-width:none}
+.em{background:var(--warm);border:1px solid var(--rule);padding:32px 36px;margin:24px 0}
+.es{font-weight:500;font-size:14px;color:var(--dk);margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.es span{font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--lt);display:block;margin-bottom:6px}
+.em p{font-size:14.5px;line-height:1.75;margin-bottom:14px;color:var(--ink);max-width:none}
+.em ul{margin:0 0 14px;padding:0;list-style:none}
+.em ul li{font-size:14.5px;line-height:1.7;color:var(--ink);padding-left:20px;position:relative;margin-bottom:6px}
+.em ul li::before{content:"–";position:absolute;left:0;color:var(--acc)}
+.esig{margin-top:24px;padding-top:16px;border-top:1px solid var(--rule);font-size:13px;color:var(--md)}
+ul.list{list-style:none;padding:0;margin:16px 0 24px}
+ul.list li{font-size:15px;line-height:1.7;color:var(--ink);padding-left:20px;position:relative;margin-bottom:10px}
+ul.list li::before{content:"–";position:absolute;left:0;color:var(--acc);font-weight:500}
+.bg{display:grid;grid-template-columns:1fr;gap:0;margin:32px 0}
+.bi{border-left:3px solid var(--rule);padding:20px 24px;margin-bottom:16px;transition:border-color .2s}
+.bi:hover{border-color:var(--acc)}
+.bn{font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+.bi p{font-size:15px;margin:0;line-height:1.7;max-width:none}
+.concept{margin-top:48px;padding-top:40px;border-top:1px solid var(--rule)}
+.ctag{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);border:1px solid rgba(204,85,0,.3);padding:3px 10px;margin-bottom:16px}
+.ex{background:var(--warm);border-left:2px solid var(--rule);padding:20px 24px;margin:16px 0}
+.ex .xl{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--lt);margin-bottom:8px}
+.ex p{font-size:14px;line-height:1.7;margin:0 0 8px;color:var(--ink);max-width:none}
+.ex p:last-child{margin:0}
+.ex p em{color:var(--md);font-style:italic}
+.diag{margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid var(--rule)}
+.diag:last-child{border-bottom:none;padding-bottom:0}
+.dp{font-size:14.5px;color:var(--md);font-style:italic;margin-bottom:20px;line-height:1.7}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:20px 0}
+@media(max-width:580px){.ba{grid-template-columns:1fr}}
+.bb{padding:18px 20px;background:#F5F5FA;border:1px solid var(--rule)}
+.ab{padding:18px 20px;background:#FFF8F4;border:1px solid var(--acc);border-left:4px solid var(--acc)}
+.bbl{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;color:var(--lt)}
+.abl{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;color:var(--acc)}
+.bbc{font-size:14px;line-height:1.65;color:var(--md);font-style:italic}
+.abc{font-size:14px;line-height:1.65;color:var(--dk);font-weight:500}
+.dn{font-size:13px;line-height:1.7;color:var(--lt);font-style:italic;padding-left:16px;border-left:2px solid var(--rule);margin-top:12px}
+.wg{display:grid;grid-template-columns:3fr 2fr;gap:48px;margin-top:16px}
+@media(max-width:640px){.wg{grid-template-columns:1fr;gap:32px}}
+.sb{margin-bottom:32px}
+.sb .sl{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
+.sb p{font-size:13px;line-height:1.65;color:var(--md);margin:0}
+.closer{margin-top:48px;padding:40px;background:var(--dk);color:var(--white)}
+.closer p{font-size:15.5px;line-height:1.8;color:rgba(255,255,255,.75);margin-bottom:16px;max-width:none}
+.closer p.hi{font-family:"Playfair Display",serif;font-size:22px;font-weight:700;color:var(--white);line-height:1.4}
+.closer p.kl{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:20px}
+footer{margin-top:80px;padding:32px 0 0;border-top:2px solid var(--acc)}
+.fn{font-family:"Playfair Display",serif;font-size:28px;font-weight:700;color:var(--dk);margin-bottom:8px}
+.fl{font-size:13.5px;color:var(--md)}
+.fl a{color:var(--acc);text-decoration:none}
+.fl a:hover{text-decoration:underline}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+.rv.vis{opacity:1;transform:none}
+/* applied work */
+.aw{border-left:3px solid var(--acc);padding:24px 28px;margin:24px 0;background:rgba(204,85,0,.03)}
+.aw h3{margin-top:0;margin-bottom:4px}
+.aw .am{font-size:12px;color:var(--lt);font-style:italic;margin-bottom:16px}
+.aw p{font-size:14.5px;line-height:1.75;margin-bottom:12px;max-width:none}
+.aw p:last-child{margin-bottom:0}
+.aw .al{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-top:16px;margin-bottom:6px}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav>
+<div class="ni">
+<a class="nn" href="#top">Eli Coe</a>
+<ul class="nl">
+<li><a href="#spec">Spec</a></li>
+<li><a href="#voice">Voice</a></li>
+<li><a href="#concepts">Concepts</a></li>
+<li><a href="#diag">Diagnostic</a></li>
+<li><a href="#applied">Applied Work</a></li>
+<li><a href="#who">Who I Am</a></li>
+</ul>
+</div>
+</nav>
+<div class="wrap" id="top">
+
+<!-- COVER -->
+<div class="cover rv">
+<div class="ey">Copy Lead, Enterprise &nbsp;&middot;&nbsp; Portfolio &amp; Spec Work &nbsp;&middot;&nbsp; Anthropic</div>
+<div class="cn">Eli Coe</div>
+<div class="ct">Copywriter &nbsp;&middot;&nbsp; Creative Strategist &nbsp;&middot;&nbsp; Brand Voice</div>
+<div class="ar"></div>
+<div class="cb">
+<p>I&#8217;ve never worked inside an agency. Never had a creative director tell me what was acceptable, a billing structure that capped ambition, or a client approval process that sanded the edges off everything interesting. Every instinct I have was developed in the open &#8212; tested against real work, real audiences, real consequences, with no one to defer to and nowhere to hide.</p>
+<p>The result is range. And a standard that comes from inside rather than from a hierarchy above. I don&#8217;t know how to do mediocre work on purpose. I don&#8217;t have the institutional training for it.</p>
+<p>Three novels. A screenplay that won at the Atlanta Comedy Film Festival. Years of copy work across DTC, SaaS, and fintech. A childhood spent watching language move people toward decisions that shaped elections. My mind has been working this problem &#8212; how words change what people believe and do &#8212; from more angles than most people who&#8217;ve spent a decade at a single agency. This portfolio is what that looks like pointed at the hardest brief I could find.</p>
+</div>
+<div class="toc">
+<span class="tl">Contents</span>
+<a href="#spec">Anthropic Spec Campaign</a><span class="ts">&nbsp;&middot;&nbsp;</span>
+<a href="#voice">Voice System</a><span class="ts">&nbsp;&middot;&nbsp;</span>
+<a href="#concepts">Original Concepts</a><span class="ts">&nbsp;&middot;&nbsp;</span>
+<a href="#diag">Diagnostic Work</a><span class="ts">&nbsp;&middot;&nbsp;</span>
+<a href="#applied">Applied Work</a><span class="ts">&nbsp;&middot;&nbsp;</span>
+<a href="#who">Who I Am</a>
+</div>
+</div>
+
+<!-- SECTION 1: SPEC -->
+<section id="spec" class="rv">
+<div class="kk">01 &nbsp;&middot;&nbsp; Anthropic &#8212; Enterprise Campaign Spec</div>
+<h1>&#8220;You&#8217;re responsible<br>for this.&#8221;</h1>
+<p class="meta">Built for this role. No internal access, no brief &#8212; derived from the public record. The question I set: what does accountability-forward enterprise copy actually sound like, and why isn&#8217;t anyone writing it?</p>
+<p>The enterprise AI category has a specific copy problem. Every vendor is selling confidence. Capability. Scale. The message has converged &#8212; and the CIO who has sat through twelve of these pitches knows it. The one thing no one is writing toward is the truth: deploying AI at enterprise scale means owning the outcomes. The governance decisions. The audit trail. The call when something surfaces that wasn&#8217;t in the demo.</p>
+<p>Anthropic owns infrastructure the rest of the category is still building toward. The brief isn&#8217;t to explain that. It&#8217;s to write for the person who already understands the weight of it &#8212; and make them feel seen rather than sold.</p>
+<div class="callout"><p>&#8220;You&#8217;re responsible for this.&#8221; We trust you with this &#8212; and here&#8217;s everything we built so you can stand behind it.</p></div>
+<div class="rule"></div>
+
+<div class="lbl">Channel 01 &#8212; OOH &amp; Event</div>
+<p class="meta">Anthropic&#8217;s OOH should feel like an institution that earns the stop, not one that buys it. Heavy type. Restraint. Nothing the reader needs to decode.</p>
+<div class="ooh">
+<div class="oc"><div class="cl">Option A &#8212; The Weight Board</div><div class="ch">You&#8217;re responsible for this.</div><div class="cd">Anthropic builds for the person who is.</div></div>
+<div class="oc"><div class="cl">Option B &#8212; The Trust Board</div><div class="ch">The AI your security team <span>can actually explain.</span></div><div class="cd">Claude Enterprise.</div></div>
+<div class="oc"><div class="cl">Option C &#8212; The Proof Board</div><div class="ch">Every Anthropic employee works on Claude Enterprise.</div><div class="cd">Same model. Same governance. Your deployment.</div></div>
+<div class="oc"><div class="cl">Option D &#8212; Conference</div><div class="ch">You didn&#8217;t come here to run another pilot.</div><div class="cd">Neither did we.</div></div>
+</div>
+<div class="rule"></div>
+
+<div class="lbl">Channel 02 &#8212; Solutions Page &middot; Regulated Industries</div>
+<p class="meta">For the CIO/CISO in financial services, healthcare, or legal. The questions they&#8217;re actually asking aren&#8217;t on the standard enterprise page.</p>
+<div class="hed">High-stakes work needs AI that can be held accountable.</div>
+<div class="deck">Claude Enterprise is built for the deployments where getting it wrong isn&#8217;t an option.</div>
+<p>Deploying a frontier AI model in a regulated environment raises questions that don&#8217;t exist for individual use. Where does data reside? Who can access what? How is usage audited? What happens when the model is updated?</p>
+<p>Our view is that answering those questions well &#8212; and upfront &#8212; is part of deploying AI responsibly. Customer prompts and responses aren&#8217;t used to train our models by default. Retention is configurable. Administrators have the controls they need to govern access without standing between employees and the work.</p>
+<div class="pgrid">
+<div class="pc"><div class="pco">Moody&#8217;s</div><p>High-stakes, defensible, auditable, explainable work. The work Claude Enterprise is built for.</p></div>
+<div class="pc"><div class="pco">Lyft</div><p>The deciding factor: Claude&#8217;s ability to feel like Lyft rather than a generic chatbot. Resolution times dropped by over 87%.</p></div>
+<div class="pc"><div class="pco">PwC</div><p>Started as Customer Zero. Insurance underwriting: ten weeks to ten days. A stalled HR program: working prototype in one week.</p></div>
+</div>
+<div class="hed" style="font-size:28px">The same model we use on our own most sensitive research.</div>
+<p>We don&#8217;t offer enterprises a watered-down version. We offer them what we trust ourselves.</p>
+<p><strong>Talk to our enterprise team.</strong><br>A conversation about your deployment and whether this is the right fit. If it isn&#8217;t, we&#8217;ll tell you.</p>
+<div class="rule"></div>
+
+<div class="lbl">Channel 03 &#8212; Executive Nurture Email &middot; CIO/CISO Mid-Funnel</div>
+<p class="meta">The question that always comes late &#8212; after the capability demo, after procurement. We bring it first.</p>
+<div class="em">
+<div class="es"><span>Subject line</span>The question your security team will ask about AI deployment (and the honest answer)</div>
+<p>Hi [First Name],</p>
+<p>There&#8217;s a question that comes up in almost every enterprise AI conversation we have with regulated industries, and it tends to arrive late &#8212; after the capability demo, sometimes after the contract.</p>
+<p>The question is: what actually happens to our data?</p>
+<p>We think it should come first. So here&#8217;s the honest answer:</p>
+<ul><li>Customer prompts and outputs aren&#8217;t used to train our models by default.</li><li>Retention is configurable to your organization&#8217;s requirements.</li><li>Administrators have full audit log access &#8212; usage, access, and model activity.</li><li>SSO, SCIM, and role-based access controls are standard, not add-ons.</li></ul>
+<p>Every Anthropic employee &#8212; including legal, finance, and safety research &#8212; works on Claude Enterprise under the same governance model we offer customers. We don&#8217;t offer a different tier of trust.</p>
+<p>If you want to talk through the governance specifics with someone who can give you a straight answer, I&#8217;m happy to set that up.</p>
+<div class="esig">[First Name] [Last Name]<br>Anthropic Enterprise</div>
+</div>
+<div class="rule"></div>
+
+<div class="lbl">Channel 04 &#8212; Event &middot; The Briefing Invitation</div>
+<div class="em">
+<div class="es"><span>Subject line</span>You&#8217;re invited to The Briefing. It&#8217;s not a demo.</div>
+<p>The Briefing is Anthropic&#8217;s forum for the people making real decisions about enterprise AI deployment &#8212; not the people still deciding whether to start.</p>
+<p>The questions in that room aren&#8217;t about capability anymore. They&#8217;re about governance, auditability, and what it actually looks like when AI runs production workflows under regulatory scrutiny. We built The Briefing around those questions.</p>
+<p>You&#8217;re responsible for what happens when your organization deploys AI. We built Claude Enterprise for the person who is.</p>
+<p><strong>[Reserve your seat &#8594;]</strong></p>
+</div>
+</section>
+
+<!-- SECTION 2: VOICE -->
+<section id="voice" class="rv">
+<div class="kk">02 &nbsp;&middot;&nbsp; Enterprise Voice System &#8212; What I&#8217;d Contribute</div>
+<h1>Three places enterprise<br>copy breaks. Fixed.</h1>
+<div class="rule"></div>
+<div class="bg">
+<div class="bi"><div class="bn">Break 01 &#8212; The claim outpaces the proof.</div><p>&#8220;Enterprise-grade governance&#8221; lands in the reader&#8217;s mental discard pile before the sentence ends. &#8220;Customer prompts aren&#8217;t used to train our models by default, and retention is configurable to your requirements&#8221; &#8212; that one they write down. The specific fact earns the trust. The label just borrows it.</p></div>
+<div class="bi"><div class="bn">Break 02 &#8212; The copy avoids what the reader is actually feeling.</div><p>Enterprise buyers aren&#8217;t looking for a partner to share their risk. They&#8217;re looking for infrastructure they can stand behind when the audit happens. Copy that softens the responsibility &#8212; makes deployment feel low-stakes, reversible, shared &#8212; misreads the room. The buyer who trusts you is the one you told the truth to.</p></div>
+<div class="bi"><div class="bn">Break 03 &#8212; The register shifts when the audience gets harder.</div><p>Onboarding copy sounds like a person. Error states sound like a lawyer. Campaign headlines sound like a brand. Product pages sound like a datasheet. Every surface break is a small trust erosion. The discipline is the same voice at every temperature &#8212; the subject changes, the register doesn&#8217;t.</p></div>
+</div>
+<div class="rule"></div>
+<h3>What I look for when a voice is broken</h3>
+<ul class="list">
+<li>Copy that talks about the product instead of to the person.</li>
+<li>Claims made without the specific fact that earns them.</li>
+<li>Touchpoints that sound like different brands &#8212; onboarding warm, error states robotic, ads performative.</li>
+<li>Enterprise copy that inflates instead of earns: &#8220;transformative,&#8221; &#8220;enterprise-grade,&#8221; &#8220;at scale.&#8221;</li>
+<li>Readiness assumptions &#8212; copy written for a customer who&#8217;s already convinced, not the one who hasn&#8217;t decided yet.</li>
+</ul>
+</section>
+
+<!-- SECTION 3: CONCEPTS -->
+<section id="concepts" class="rv">
+<div class="kk">03 &nbsp;&middot;&nbsp; Original Concepts &#8212; Three Campaigns</div>
+<h1>Built from a single<br>point of view.</h1>
+<div class="rule"></div>
+
+<div class="concept">
+<span class="ctag">Concept 01</span>
+<h2>The Wave.</h2>
+<p class="meta">For: Resilience-first consumer brands &#8212; health, wellness, financial recovery &#8212; that talk about strength but only ever show the triumphant after, never the difficult middle.</p>
+<div class="lbl">The Problem</div>
+<p>Resilience advertising has a specific failure mode: it shows the breakthrough. The before-and-after. The person who found their footing and never looked back. It markets to the winner while ignoring the enormous, underserved audience still in it &#8212; not broken, not done, just still going. Everywhere. Underrepresented in every category that talks about strength, because those campaigns are built around the after.</p>
+<div class="lbl">The Campaign</div>
+<div class="hed">You&#8217;ve been knocked down enough times<br>to stop counting.</div>
+<div class="hed acc">Point at the next one.</div>
+<div class="lbl">Executions</div>
+<div class="ex"><div class="xl">Billboard</div><p>The wave is coming anyway. &nbsp;[Brand]</p></div>
+<div class="ex"><div class="xl">Paid Social</div><p>You stopped asking if you could handle it. You already know you can. &nbsp;[Brand]</p></div>
+<div class="ex"><div class="xl">Video VO</div><p><em>You&#8217;ve been knocked down by enough of them to know what they feel like coming. The fear doesn&#8217;t go away. You just stop letting it decide. Point at the next one. [Brand]. For the ones still in it.</em></p></div>
+</div>
+
+<div class="concept">
+<span class="ctag">Concept 02</span>
+<h2>Do It Anyway.</h2>
+<p class="meta">For: High-friction, high-commitment categories &#8212; financial products, health interventions, career change &#8212; where the customer has been circling the decision for months and hasn&#8217;t moved.</p>
+<div class="lbl">The Problem</div>
+<p>Most brands in high-friction categories try to reduce perceived risk. &#8220;Easy. Simple. Get started in minutes.&#8221; Copy written for someone who just needed a small push. It doesn&#8217;t reach the person who has been thinking about this for a year, who doesn&#8217;t feel ready, who has failed before. Easier isn&#8217;t the answer. Permission to move without feeling ready is.</p>
+<div class="lbl">The Campaign</div>
+<div class="hed">You&#8217;re not ready.</div>
+<div class="hed">You never were.</div>
+<div class="hed acc">Do it anyway.</div>
+<div class="lbl">Executions</div>
+<div class="ex"><div class="xl">Billboard</div><p>You&#8217;ve survived everything so far. &nbsp;[Brand]</p></div>
+<div class="ex"><div class="xl">Paid Social</div><p>Nobody feels ready. The people who do the thing anyway just stopped waiting to. &nbsp;[Brand]</p></div>
+<div class="ex"><div class="xl">Email Subject</div><p>You&#8217;ve been waiting to feel ready. &nbsp;[Brand]</p></div>
+</div>
+
+<div class="concept">
+<span class="ctag">Concept 03</span>
+<h2>handled. next.</h2>
+<p class="meta">For: Jerry &#8212; a car insurance super app targeting Gen Z users who treat every adult obligation as friction.</p>
+<div class="lbl">The Problem</div>
+<p>Insurance advertising tries to make people care about insurance. Gen Z doesn&#8217;t want to think about car insurance &#8212; they want it handled, invisible, filed under done. The campaign that works is the one that agrees with them.</p>
+<div class="lbl">Platform A &#8212; handled. next.</div>
+<p class="meta">Lowercase is deliberate. The visual language of a text message, a DM &#8212; something sent without ceremony. The entire brand promise in a typographic choice.</p>
+<div class="ex"><div class="xl">Video</div><p><em>Someone glances at a Jerry notification &#8212; policy sorted &#8212; pockets their phone and walks out the door without breaking stride. No relief. No celebration. Just continuation.</em></p><p>VO: Insurance used to be an event. With Jerry, it&#8217;s a non-event.</p></div>
+<div class="ex"><div class="xl">App Notification</div><p>you&#8217;re covered. go live your life.</p></div>
+<div class="lbl">Platform B &#8212; you got Jerry?</div>
+<div class="ex"><div class="xl">TV</div><p><em>A father opens the door to a nervous suitor. One question: &#8220;you got Jerry?&#8221; Suitor pulls out phone. Father nods. Door opens wider.</em></p></div>
+<div class="ex"><div class="xl">Social UGC</div><p>&#8220;asked him if he had Jerry. he did. we&#8217;re engaged.&#8221;</p></div>
+</div>
+</section>
+
+<!-- SECTION 4: DIAGNOSTIC -->
+<section id="diag" class="rv">
+<div class="kk">04 &nbsp;&middot;&nbsp; Diagnostic Work &#8212; Messaging Problems, Fixed</div>
+<h1>The diagnosis comes<br>before the copy.</h1>
+<p>Copy that doesn&#8217;t work usually has a problem underneath the problem. These show the diagnosis before the fix &#8212; because if you don&#8217;t identify what&#8217;s actually wrong, the rewrite just covers it up.</p>
+<div class="rule"></div>
+
+<div class="diag">
+<h3>01 &#8212; Feature-heavy product messaging</h3>
+<p class="dp">Copy describes what the product does without connecting to what the user actually wants. The product is positioned against competitors instead of against the user&#8217;s existing frustration.</p>
+<div class="ba"><div class="bb"><div class="bbl">Before</div><div class="bbc">Our platform provides innovative solutions to streamline your workflow and enhance productivity outcomes.</div></div><div class="ab"><div class="abl">After</div><div class="abc">You already know what&#8217;s slowing you down. We help you fix it &#8212; without adding three more tools to your stack.</div></div></div>
+<div class="dn">The original speaks about the product. The rewrite speaks to the experience &#8212; and pre-empts the tool-fatigue objection in the same breath.</div>
+</div>
+
+<div class="diag">
+<h3>02 &#8212; Transactional lifecycle messaging</h3>
+<p class="dp">Confirmation copy moves information but doesn&#8217;t build the relationship. Every system message is a micro-interaction. Wasted micro-interactions erode trust slowly and invisibly.</p>
+<div class="ba"><div class="bb"><div class="bbl">Before</div><div class="bbc">Your account has been successfully updated.</div></div><div class="ab"><div class="abl">After</div><div class="abc">You&#8217;re all set. We&#8217;ll let you know if anything needs your attention.</div></div></div>
+<div class="dn">The original confirms a system action. The rewrite confirms an emotional state &#8212; and removes the burden of follow-up from the user entirely. Clearer copy, yes. Also a different relationship.</div>
+</div>
+
+<div class="diag">
+<h3>03 &#8212; Re-engagement email leading with the task</h3>
+<p class="dp">The user has already demonstrated hesitation by not completing setup. Reminding them of the incomplete task reinforces the obligation without addressing the belief that created the hesitation.</p>
+<div class="ba"><div class="bb"><div class="bbl">Before</div><div class="bbc">Complete your setup to start using [product].</div></div><div class="ab"><div class="abl">After</div><div class="abc">Subject: You&#8217;re closer than you think. &#8212; You&#8217;re already set up. Most people start seeing results within minutes of logging back in. The only thing left is to take a look.</div></div></div>
+<div class="dn">The original frames the situation as incomplete. The rewrite frames it as already resolved &#8212; and addresses the underlying belief before the user has a chance to act on it.</div>
+</div>
+
+<div class="diag">
+<h3>04 &#8212; Health and wellness category reframe</h3>
+<p class="dp">Copy leads with the solution before resolving the customer&#8217;s existing belief. The wall goes up before the sentence is finished.</p>
+<div class="ba"><div class="bb"><div class="bbl">Before</div><div class="bbc">Boost your energy naturally with our scientifically formulated supplement.</div></div><div class="ab"><div class="abl">After</div><div class="abc">You don&#8217;t have an energy problem. You have a processing problem.</div></div></div>
+<div class="dn">Every other energy supplement is solving the same stated problem. This rewrite names a different problem &#8212; one the customer recognizes as more accurate. The category reframe is the entry point.</div>
+</div>
+
+<div class="diag">
+<h3>05 &#8212; Enterprise AI vendor using generic claims</h3>
+<p class="dp">The brand has a real differentiator and is burying it under the same language as companies that have none of those things.</p>
+<div class="ba"><div class="bb"><div class="bbl">Before</div><div class="bbc">Our enterprise-grade AI platform delivers transformative, scalable results for organizations of all sizes, with security and compliance built in.</div></div><div class="ab"><div class="abl">After</div><div class="abc">Every Anthropic employee &#8212; including legal, finance, and safety research &#8212; works on Claude Enterprise under the same governance model we offer customers. We don&#8217;t offer a different tier of trust.</div></div></div>
+<div class="dn">The original is indistinguishable from every competitor. The rewrite earns the trust claim by proving it with a specific, verifiable fact.</div>
+</div>
+</section>
+
+<!-- SECTION 5: APPLIED WORK -->
+<section id="applied" class="rv">
+<div class="kk">05 &nbsp;&middot;&nbsp; Applied Work &#8212; Real Brands, Real Stakes</div>
+<h1>The copy wasn&#8217;t<br>in the job description.<br>I did it anyway.</h1>
+<p>At every venue I managed, the copy fell to me &#8212; because I saw where it was weak and knew I could fix it — the copy fell to me, not by assignment. Cocktail menus that didn&#8217;t match the room. Social copy that sold a vibe the place didn&#8217;t have. Event language that should have made you want to be there and didn&#8217;t. I took it on because it&#8217;s my strength and because leaving it wrong wasn&#8217;t an option when I was the one responsible for the room.</p>
+<p>Running operations and owning the brand voice simultaneously produces something a traditional copy background doesn&#8217;t: the knowledge of whether the language actually works. Every shift was a live test. Every weekend was a verdict.</p>
+<div class="rule"></div>
+
+<div class="aw">
+<h3>Rosemary &amp; Beauty Queen</h3>
+<div class="am">Nashville bar and restaurant &middot; On-site General Manager &middot; <a href="https://www.rosemaryandbeautyqueen.com" target="_blank" style="color:var(--acc)">rosemaryandbeautyqueen.com</a></div>
+<div class="al">The Role</div>
+<p>On-site General Manager &#8212; operations, inventory, staff, and special events. The menu development and cocktail concepts weren&#8217;t a side project or a freelance engagement. They were part of running the place, because a GM who understands the brand is the only one who can write a menu that the room will actually sell.</p>
+<div class="al">The Copy Work</div>
+<p>Original cocktail concepts and menu development for RBQ. The name carries dual personality &#8212; the softness of rosemary against the audacity of beauty queen &#8212; and the menu had to match that register without explaining it. REMAKE/REMODEL. THREE &amp; NINE. AVALON. Each name is a brief that fits in three words: what it tastes like, what it feels like, and what it says about where you are. Written by someone who had also just finished the inventory count and had a reservation sheet to manage.</p>
+</div>
+
+<div class="callout"><p>A menu written by a GM who runs the floor reads differently from one written by a copywriter who visited once. Every word has to be sellable by a server at 9pm on a Saturday.</p></div>
+
+<div class="aw">
+<h3>IGC Hospitality</h3>
+<div class="am">Multi-venue group &middot; NYC &amp; Orlando &middot; Floor Manager, high-volume operations</div>
+<div class="al">The Role</div>
+<p>Floor manager across high-volume shifts, 30+ staff per night. IGC operates multiple distinct concepts across two major markets &#8212; Park Avenue Tavern, The Refinery Rooftop, The Wilson, Take Care, Winnie&#8217;s Jazz Bar, and others. Managing at that scale means reading the room constantly and understanding what each concept owes its customer.</p>
+<div class="al">The Copy Work</div>
+<p>Original cocktail concepts and menu development across IGC&#8217;s venue portfolio. A rooftop bar in Midtown and a jazz bar downtown don&#8217;t share a customer or a voice. Writing for both in the same week &#8212; and making neither sound like the other &#8212; is the practical definition of brand range. The operational background wasn&#8217;t separate from the copy work. It was the brief.</p>
+</div>
+
+<div class="aw">
+<h3>Flamingo Cocktail Club</h3>
+<div class="am">Nashville &middot; General Manager &#8212; full operational purview</div>
+<div class="al">Why This Matters for a Copy Role</div>
+<p>Every venue I managed had copy that needed work. I didn&#8217;t wait for someone to ask. I rewrote the menus, developed the cocktail concepts, wrote the social copy, and made the brand say what the room actually was. The feedback loop that agency work never provides &#8212; whether the language landed, whether it sold, whether the customer felt what you intended &#8212; hospitality operations provides in real time, every shift.</p>
+</div>
+
+<div class="aw">
+<h3>Straps Leather</h3>
+<div class="am">DTC leather brand &middot; Founded &amp; launched by Eli Coe &middot; <a href="https://www.strapsleather.com" target="_blank" style="color:var(--acc)">strapsleather.com</a></div>
+<p>Full brand launch from zero. Named the company. Defined the product line and positioning. Built the site on Webflow. The leather pet accessories category runs between two poles: heritage craft brands that lead with provenance and DTC lifestyle brands that lead with the dog as a fashion accessory. Straps positions between them &#8212; direct and product-honest. The name does the same work. One word. A noun that is also a product category.</p>
+<p>A copywriter who has launched their own brand understands something a hired writer often doesn&#8217;t: every word costs something. When it&#8217;s your own brand, your own money, and your own name on the door, you learn to make every decision count.</p>
+</div>
+</section>
+
+<!-- SECTION 6: WHO I AM -->
+<section id="who" class="rv">
+<div class="kk">06 &nbsp;&middot;&nbsp; Who I Am</div>
+<h1>Outside the box<br>is where I live.</h1>
+<div class="wg">
+<div>
+<p>Most people who apply for a role like this spent a decade inside the system that produces writers for roles like this. Agencies. In-house teams. Career ladders with defined rungs. Competence is the output. So is constraint &#8212; learned patterns, institutional caution, a muscle memory for what&#8217;s acceptable that is almost impossible to unlearn.</p>
+<p>I don&#8217;t have any of that. Every brief I&#8217;ve ever taken, I&#8217;ve taken alone. Every standard I&#8217;ve held myself to, I set. There&#8217;s no tougher creative director than the one you answer to when you&#8217;re the only person in the room. No easier place to coast, and no faster feedback loop when the work isn&#8217;t good enough. What self-employment builds &#8212; if you take it seriously, and I have &#8212; is a work ethic and a creative standard that doesn&#8217;t require external pressure to activate. It&#8217;s just on, all the time.</p>
+<div class="rule"></div>
+<p>The background looks unconventional on paper. Politics before I knew it was brand strategy. Novels before I understood they were voice training. Copy work across more categories than most specialists ever touch, without the specialization ever narrowing what I could see. My mind doesn&#8217;t stop working a problem. It turns it over, comes back to it, finds the angle that wasn&#8217;t visible from the front.</p>
+<p>The certifications I didn&#8217;t have, I went and got. The gaps the market kept surfacing &#8212; SEO, content strategy, email marketing, analytics &#8212; I closed them, one by one, because the standard I hold myself to required it, not because someone asked. HubSpot in all three. GA4. WordPress. Identified, scheduled, finished.</p>
+<p>I use Claude every day as a thinking partner &#8212; the way this role demands. I understand from the inside what it feels like when the model is working with you versus running past you. Writing enterprise copy for a company whose product is collaborative intelligence is a brief that rewards knowing that difference. I know it.</p>
+</div>
+<div>
+<div class="sb"><div class="sl">Background</div><p>Three novels. Screenplay &#8212; Best Short TV Episode, Atlanta Comedy Film Festival. Copy across DTC, SaaS, fintech, consumer health.</p></div>
+<div class="sb"><div class="sl">Certifications</div><p>HubSpot SEO &middot; HubSpot Content Marketing &middot; HubSpot Email Marketing &middot; Google Analytics 4 &middot; WordPress</p></div>
+<div class="sb"><div class="sl">Formed by</div><p>Political messaging. Narrative writing. The relentless self-imposed pressure of working alone.</p></div>
+</div>
+</div>
+<div class="closer">
+<p class="kl">The case</p>
+<p>Hire the person with the conventional portfolio and you&#8217;ll get what every conventional portfolio produces: competent, reliable, already shaped by someone else&#8217;s vision of what good looks like.</p>
+<p class="hi">Or hire someone whose instincts were never constrained by what was acceptable &#8212; who came to this craft through politics and narrative and the relentless self-imposed pressure of working alone &#8212; and see what happens when that person finally has the right brief, the right team, and a company worth building something extraordinary for.</p>
+<p>I&#8217;ve been the hardest boss I&#8217;ve ever had. I&#8217;m not done proving it.</p>
+</div>
+</section>
+
+<footer>
+<div class="fn">Eli Coe</div>
+<div class="fl">
+<a href="mailto:quigleycoe@gmail.com">quigleycoe@gmail.com</a> &nbsp;&middot;&nbsp;
+<a href="https://linkedin.com/in/eli-coe-b0085b401" target="_blank">LinkedIn</a> &nbsp;&middot;&nbsp;
+<a href="https://maddening-shad-af6.notion.site/ELI-COE-PORTFOLIO-33ec7f4e29b380c3b511cb62434cd1b1" target="_blank">Full Portfolio</a>
+</div>
+</footer>
+</div>
+<script>
+window.addEventListener("scroll",()=>{const d=document.documentElement;document.getElementById("bar").style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+"%"});
+const ob=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("vis");ob.unobserve(x.target)}})},{threshold:.06});
+document.querySelectorAll(".rv").forEach(el=>ob.observe(el));
+</script>
+</body>
+</html>
